@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChristianRodriguezValdiviezo</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <!-- Provide option to upload another image -->
+    <a href="/">Upload another image</a>
+    
+    <p>The predicted label for the uploaded image is: {{ result_label }}</p>
+    
+    <!-- Display the predicted image -->
+    <img src="{{ url_for('static', filename='predicted_image.png') }}" alt="Predicted Image">
+
+    
+</body>
+</html>
